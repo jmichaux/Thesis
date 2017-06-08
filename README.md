@@ -6,7 +6,7 @@ to get up and running fairly quickly if you decide you want to use LaTeX to form
 *Disclaimer: I have not yet gained a high amount of proficiency with LaTeX, and this is probably not the best approach.  However,
 it gave me a fair amount of flexibility and worked well enough with the tools I had already been using.*
 
-**Tools**
+# Tools
 1. Papers 3.4.5 - Downloading papers/managing references. Can export a bibliography as a .bib file.
 
 2. Dropbox - Used Dropbox to sync my Papers library across multiple computers.
@@ -19,7 +19,7 @@ https://github.com/mvzink/ucetd-latex (UChicago Thesis template).  Sharelatex al
 never looked into or learned how to use.
 
 
-**Approach**
+# Approach
 1. Typed thesis outline in Google docs, sometimes inserting references from Papers.  Can type command + option + C to copy Bibtex-style reference from Papers, and then command + v to insert it in the text.
 
 			e.g. \cite{Krendel:2005ko}, \cite{Simmons:1996vj,Finer:1994kw,Schliwa:2003jn}
@@ -33,7 +33,7 @@ never looked into or learned how to use.
 5. I exported a .bib file from Papers.
 
 
-**Useful tips/gotchas**
+# Useful tips/gotchas
 
 0. Closing brackets {} is important
 
