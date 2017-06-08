@@ -1,0 +1,97 @@
+% ---- ETD Document Class and Useful Packages ---- %
+\documentclass{ucetd}
+\usepackage{subfigure,epsfig,amsfonts}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{subfiles}
+\usepackage{standalone}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\DeclareCaptionFont{mysize}{\fontsize{10}{9.6}\selectfont}
+\captionsetup{font=mysize}
+%\usepackage[CaptionAfterwards]{fltpage}
+%\usepackage[font=scriptsize]{caption}
+%\captionsetup[figure]{labelfont=bf}
+\captionsetup[figure]{labelfont=bf,labelsep=period}
+\graphicspath{ {figures/ch1/}{figures/ch2/}{figures/ch3/}{figures/ch4/} }
+
+
+
+%Added 8/30/2015
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+
+
+%Make sure the list of figures has normal font 
+% http://tex.stackexchange.com/questions/131930/remove-font-styles-in-list-of-figures
+\AtBeginDocument{
+  \addtocontents{lof}{%
+    \let\sffamily\rmfamily
+    \let\scshape\rmfamily
+    \let\textbf\textrm
+    \let\textit\textrm
+  }
+}
+
+
+%% Use these commands to set biographic information for the title page:
+\title{Dynamic control of pulsed contractions in the early C. elegans embryo}
+\author{Jonathan Brian Michaux}
+%\division{Biological Sciences and the Pritzker School of Medicine}
+\division{}
+\department{Molecular Genetics and Cell Biology}
+\degree{Doctor of Philosophy}
+\date{March 2017}
+
+%% Use these commands to set a dedication and epigraph text
+\dedication{To my parents and my three sisters for all of their support}
+\epigraph{Epigraph Text}
+
+
+\begin{document}
+%% Basic setup commands
+% If you don't want a title page comment out the next line and uncomment the line after it:
+\maketitle
+%\omittitle
+
+% These lines can be commented out to disable the copyright/dedication/epigraph pages
+\makecopyright
+\makededication
+%\makeepigraph
+
+
+%% Make the various tables of contents
+\tableofcontents
+\listoffigures
+\listoftables
+
+%create a list of movies/video
+%\listofmovies
+
+%\acknowledgments
+% Enter Acknowledgements here
+
+\abstract
+% Enter Abstract here
+Epithelial morphogenesis consists of the various process that promote the bending, folding, and rearrangement of tissues during organ formation and development.  At the heart of these processes, complex organizations and contractions of the actomyosin cytoskeleton drive the individual cell shape changes that underlie tissue morphogenesis.  The assembly and dynamics of these actomyosin networks are regulated by a host of actin-binding proteins, as well as regulatory molecules such as the RhoA Family of GTPases.  Although much is known about the structure and function of the individual components of contractile networks, much less is known about how cells tune the organization and dynamics these networks in space and in time.  The subject of this thesis is one mode of contractility known as pulsed contractility.  Pulsed contractions have been shown to be a key regulator in various instances of tissue morphogenesis.  We have shown that autocatalytic activation of active RhoA drives pulsed contractions in the early \textit{C.elegans} embryo.  The accumulation of active RhoA precedes the activation, assembly, and recruitment of F-actin, Myosin II, and Anillin within pulsed contractions.  We have also shown that pulses of active RhoA do not depend on the presence of Myosin II or Anillin.  The delayed accumulation of the redundant RhoA GAPs RGA-3 and RGA-4 relative to active RhoA, and the loss of active RhoA pulses in \textit{rga-3/4} mutants, is consistent with RGA-3/4-mediated negative feedback terminating RhoA pulses.  The fact that GFP::RGA-3 strongly co-localizes with F-actin, and the depolymerization of F-actin leads to a near-total loss of GFP::RGA-3 on the cortex and global activation of RhoA, suggests that F-actin mediates this negative feedback.  We believe that the results presented here lay the foundation for a novel conceptual framework in which the spatial and temporal kinetics of RhoA activation is tightly coupled to the dynamics of the underlying actomyosin cytoskeleton.
+
+
+\mainmatter
+% Main body of text follows
+
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+
+% Format a LaTeX bibliography
+\makebibliography
+
+\end{document}
+
+
