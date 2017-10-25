@@ -41,7 +41,7 @@ never looked into or learned how to use.
 
 2. \textit{} - command for italicizing text. e.g. \textit{C. elegans}
 
-3. \textbf{} - command for making text bold e.g. \textit{
+3. \textbf{} - command for making text bold e.g. \textbf{Chapter 1}
 
 4. can combine bold and italics: \textit{textbf{C. elegans}} 
 
